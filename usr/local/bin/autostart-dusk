@@ -56,11 +56,15 @@ run flameshot
 dex -a &
 #}}}
 
+run "/home/trg/.screenlayout/dual1920x1080.sh" 
+
 #run "cairo-dock"
 run "touchegg"
 ###run "devmon"
 #}}}
+
 run "volnoti"
+
 # Keyboard remaps & sxhkd{{{
 run sxhkd -c ~/.config/sxhkd/sxhkdrc
 $HOME/.scripts/change-caps2esc.sh &
