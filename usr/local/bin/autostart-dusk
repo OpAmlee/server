@@ -16,7 +16,6 @@
 
 run "urxvtd -q"
 
-run "$HOME/.scripts/xrandr-login.sh"
 
 # Set display resolution{{{
 #run xrandr --output eDP-1 --mode 1366x768 --screen 0 --output DP1-1 --primary --crtc 1 --right-of eDP1 --mode 1920x1080 --screen 1 --output DP1-2 --off
@@ -24,6 +23,7 @@ run "$HOME/.scripts/xrandr-login.sh"
 #run xrandr --output eDP-1 --off --output DP-1-1 --primary --mode 1920x1080 --pos 1920x0 --output DP-1-2 --mode 1920x1080 --left-of DP-1-1 --pos 0x0
 #}}}
 
+run "/home/trg/.screenlayout/dual1920x1080.sh" 
 # Unused display resoltions {{{
 #run "xrandr --output VGA-1 --primary --mode 1360x768 --pos 0x0 --rotate normal"
 #run "xrandr --output HDMI2 --mode 1920x1080 --pos 1920x0 --rotate normal --output HDMI1 --primary --mode 1920x1080 --pos 0x0 --rotate normal --output VIRTUAL1 --off"
@@ -56,7 +56,6 @@ run flameshot
 dex -a &
 #}}}
 
-run "/home/trg/.screenlayout/dual1920x1080.sh" 
 
 #run "cairo-dock"
 run "touchegg"
